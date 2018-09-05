@@ -61,7 +61,8 @@ public class Dictionary {
 
 	public boolean findWord(String word) {
 
-		return findNode(word).isWord;
+		TrieNode trieNode = findNode(word);
+		return (trieNode==null)?false:trieNode.isWord;
 	}
 
 	public boolean isPrefix(String word) {

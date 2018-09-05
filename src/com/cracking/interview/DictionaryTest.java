@@ -53,9 +53,13 @@ public class DictionaryTest {
 
 			});
 
-			for(char alpha = 'a'; alpha<='z'; alpha++) {
-				System.out.println(alpha+":"+dictionary.findWordsThatStartWith(String.valueOf(alpha)).size());
-			}
+//			long sTime = System.nanoTime();
+//			for(char alpha = 'a'; alpha<='z'; alpha++) {
+//				System.out.println(alpha+":"+dictionary.findWordsThatStartWith(String.valueOf(alpha)).size());
+//			}
+//			long eTime = System.nanoTime();
+//			System.out.println("Time took: "+(eTime-sTime)+" ns!");
+			System.out.println(dictionary.findWord("xi"));
 			//int numOfWords = dictionary.getTotalNumberOfWords();
 //			long sTime = System.nanoTime();
 //			System.out.println(dictionary.getTotalNumberOfWords());
